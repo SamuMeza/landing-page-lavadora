@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+
+    <div>
+        <label for="searchInput">Buscar Producto:</label>
+        <input type="text" id="searchInput">
+    </div>
+
+    <ul id="productList">
+        <li>Laptop</li>
+        <li>Teclado Mecánico</li>
+        <li>Mouse Inalámbrico</li>
+        <li>Monitor Curvo</li>
+        <li>Auriculares Gaming</li>
+        <li>Webcam HD</li>
+    </ul>
+
+    <script>
+      const filter = document.getElementById("searchInput")
+      const listProducts = document.getElementById("productList")
+      let listElements = []
+
+      const findListElements = () => {
+        const childrenList = listProducts.children
+        for (const child of childrenList) {
+          listElements.push({
+            text: child.innerText.toUpperCase(),
+            element: child
+          })
+        }
+      }
+
+      findListElements()
+
+      filter.addEventListener("input", e => {
+        const inputChange = e.target.value.toUpperCase()
+        
+        listElements.forEach(item => {
+          if (item.text.includes(inputChange)) {
+            item.element.style.display = ""
+          } else {
+            item.element.style.display = "none"
+          }
+        })
+      })
+    
+    </script>
+
+</body>
+</html>

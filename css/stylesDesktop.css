@@ -1,0 +1,182 @@
+@media (min-width: 720px) {
+  header{
+    background-color: hsl(220, 80%, 60%);
+  }
+
+  body{
+    background-color: hsl(210, 80%, 60%);
+  }
+
+  .nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: .7em;
+  }
+  .sidebar-item{
+    text-align: center;
+    font-size: .8em;
+    color: black;
+    background-color: hsl(210, 80%, 85%);
+    text-decoration: none;
+    margin: .3em 0;
+    padding: .5em;
+    width: 6em;
+    border-radius: .5em;
+    cursor: pointer;
+  }
+
+/* Sección 2 Mensaje Principal*/
+  .section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .section2-ImgContainer{
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/tecnico-certificado.jpg);
+  }
+
+  .section2-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .section-title2{
+    font-size: 1.5em;
+    text-align: center;
+    word-break: keep-all;
+  }
+
+  .section-text2{
+    text-align: start;
+    line-height: 1.3em;
+    color: hsl(0, 0%, 90%);
+    text-shadow: .2em .2em .2em rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 0 1em;
+    word-break: keep-all;
+  }
+
+/* Sección 3 Habilidades de reparación*/
+
+  .section3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: hsl(210, 0%, 88%);
+  }
+
+  .section3-ImgContainer{
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/lavadora-reparada.jpg);
+  }
+
+  .section3-container{
+    width: 80%;
+    height: 50vh;
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    line-height: 1.5em;
+  }
+
+/* Sección 4 Motivos para elegirnos*/
+
+  .section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: hsl(204, 59%, 48%);
+  }
+
+  .section4-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .section4-container p{
+    display: block;
+    font-size: .8em;
+    font-weight: bold;
+  }
+
+  .section-servicio1,
+  .section-servicio2,
+  .section-servicio3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: .2em .2em .2em rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    border-radius: .5em;
+    }
+
+/* Sección 5 Contacto*/
+
+  .section5-ImgContainer{
+    width: 40vw;
+    height: 40vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/formulario-contacto.png);
+  }
+
+  .section5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /* Footer con Links*/
+
+  .footerSection1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 3em;
+  }
+}
